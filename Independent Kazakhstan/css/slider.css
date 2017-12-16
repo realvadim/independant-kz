@@ -1,0 +1,147 @@
+a {
+	color: #6D91B9;
+	text-decoration: none;
+}
+
+a:hover,
+a.selected {
+	color: #061F47;
+}
+
+#timeline {
+	overflow: hidden;
+	position: relative;
+	height:750px;
+}
+
+#dates {
+	xwidth: 900px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Georgia, serif;
+	
+}
+
+#datesBg {
+	background:url('../images/dots.jpg') no-repeat;
+	padding:20px 0;
+}
+			
+#dates li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	background: url('../images/biggerdot.png') center bottom no-repeat;	
+}
+				
+#dates a {
+	line-height: 38px;
+	padding-bottom: 10px;
+}
+
+#dates .selected {
+	font-size: 38px;
+}
+		
+#issues {
+	height: 750px;
+	overflow: hidden;
+}	
+
+#issues li {
+	width: 950px;
+	height: 750px;
+	list-style: none;
+	float: left;
+}
+			
+#issues .issueContent {
+	width:820px;
+	margin:0 auto;
+}
+
+#issues li h1 {
+	font:56px/50%  Georgia, serif;
+	margin-bottom:15px;
+}
+
+#issues table {
+	border-collapse:collapse;
+	width:100%;
+	margin-top:30px;
+}
+
+#issues tr:nth-child(even) {
+	background:#F9F9F9;
+}
+
+#issues th,
+#issues td {
+	border:1px solid #444;
+	padding:20px 15px;
+	vertical-align:middle;
+}
+
+#issues th {
+	font-weight:bold;
+	width:25%;
+	text-align:center;
+}
+		
+#grad_left,
+#grad_right {
+	width: 100px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+}
+
+#grad_left {
+	left: 0;
+	background: url('../images/grad_left.png') repeat-y;
+}
+
+#grad_right {
+	right: 0;
+	background: url('../images/grad_right.png') repeat-y;
+}
+		
+#next,
+#prev {
+	position: absolute;
+	top: 90px;
+	width: 51px;
+	display:block;
+	height:660px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	transition:0.7s;
+}
+
+#next img,
+#prev img {
+	position:absolute;
+	top:240px;
+	left:14px;
+}
+
+#next:hover,
+#prev:hover {
+	background-color:#F9F9F9;
+}
+
+#next {
+	right: 0;
+}
+
+#prev {
+	left: 0;
+}
+
+#next.disabled,
+#prev.disabled {
+	opacity: 0.2;
+}

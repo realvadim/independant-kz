@@ -1,0 +1,155 @@
+/*
+Файл создан: 23.02.2014
+Последнее обновление: 24.04.2014
+Автор: Миропольский Вадим
+*/
+
+@import url(./reset.css);
+
+body {
+    font:18px Verdana, Tahoma, sans-serif;
+    background:#FFF url(../images/bg.jpg);
+}
+
+#headerBg {
+    background:#375B83 url(../images/sky.jpg) no-repeat;
+    background-size: cover;
+    width:100%;
+    position:fixed;
+	top:0;
+	z-index:5;
+}
+
+#mainMenu, #wrapper {
+	width:950px;
+	margin:0 auto;
+}
+
+#mainMenu li {
+    display:inline-block;
+}
+
+#mainMenu a {
+    display:block;
+    padding:25px 20px;
+    color:#FFF;
+    font-size:22px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#mainMenu a:hover, #mainMenu a:active, #mainMenu a#activeItem {
+    background:rgba(1,1,1,0.1);
+    border-bottom:7px solid #E2A800;
+}
+
+#footerMenu {
+background:red;
+padding:20px;
+xfloat:right;
+}
+
+#footerMenu li {
+	display:inline-block;
+}
+
+#footerMenu li a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#footerMenu li a:active,
+#footerMenu li a:hover {
+	text-decoration:underline;
+}
+
+#wrapper {
+	margin-top:83px;
+	
+}
+
+#content {
+	background:#FFF;
+	zposition:relative;
+}
+
+#content p {
+    padding:0 20px 20px 20px;
+    color:#444;
+    text-align:justify;
+	
+}
+
+#content h1 {
+    font-weight:bold;
+    font-size:26px;
+    text-align:center;
+    padding:30px 0;
+    color:#061F47;
+}
+
+#content h2 {
+    padding:10px 20px;
+    margin-bottom:10px;
+    font-weight:bold;
+    margin-top: 10px;
+    background:#375B83;
+    color:#FFF;
+}
+
+#content p.floatLeft {
+float:left;
+padding-bottom:1px;
+padding-right:10px;
+}
+
+#content p.centred {
+text-align:center;
+}
+
+#content p.numeration {
+float:left;
+background:#375B83;
+padding:10px 15px;
+margin:0 15px;
+font-size:40px;
+font-weight:bold;
+color:#FFF;	
+}
+
+#content p.floatRight {
+float:right;
+padding-bottom:1px;
+padding-left:10px;
+}
+
+#content ul.listing {
+	padding:0 20px 20px 40px;
+    color:#444;
+    text-align:justify;
+	list-style-type:square;
+}
+
+.highlight {
+	color:#E2A800;
+	font-weight:bold;
+}
+
+.date {
+font-weight:bold;
+font-style:italic;
+}
+
+#footer {
+    background:#375B83;
+    color:#FFF;
+	line-height:150%;
+}
+
+#footer p {
+    padding:7px 20px;
+}
+
+#footer a { 
+	color:inherit;
+}
